@@ -171,6 +171,9 @@ let aiMove = function() {
     board[0] = aiPlayer;
     aiDisplay(0);
     checkForWin(aiPlayer);
+  // } else if (currentPlayer === aiPlayer && board[0] === huPlayer && board[8] === huPlayer && board[4] === aiPlayer && board[7] === null) {
+  //   aiDisplay(7);
+  //   checkForWin();
   } else if (currentPlayer === aiPlayer && board[1] === huPlayer && board[2] === huPlayer && board[3] === null) {
     board[3] = aiPlayer;
     aiDisplay(3);

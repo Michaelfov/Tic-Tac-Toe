@@ -8,7 +8,11 @@ It includes the basic html, css, javascript, and jquery language.
 
 I've tried several different ways to operate the game.
 
-The logic of AI is line by line but there still have some bugs. For example, if player selected [0] and [8],
+The logic of AI is line by line but there still have some bugs.
+
+For example, if player selected [0] and [8],
 ai don't have defence logic for our next move.
 
-You can have a try with it!
+For offence, ai will prefer stop player's move rather than win the game.
+
+Have fun!
