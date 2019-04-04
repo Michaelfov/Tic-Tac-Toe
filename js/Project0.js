@@ -167,12 +167,7 @@ const makeMove = function(boardNumber) {
 }
 
 let aiMove = function() {
-
-
-
-
-
-  if (currentPlayer === aiPlayer && board[0] !== huPlayer && board[0] !== aiPlayer) {
+    if (currentPlayer === aiPlayer && board[0] !== huPlayer && board[0] !== aiPlayer) {
     board[0] = aiPlayer;
     aiDisplay(0);
     checkForWin(aiPlayer);
@@ -244,70 +239,70 @@ let aiMove = function() {
     board[8] = aiPlayer;
     aiDisplay(8);
     checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[2] === huPlayer && board[8] === huPlayer && board[5] === null) {
-    board[5] = aiPlayer;
-    aiDisplay(5);
-  } else if (currentPlayer === aiPlayer && board[5] === huPlayer && board[8] === huPlayer && board[2] === null) {
-    board[2] = aiPlayer;
-    aiDisplay(2);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[0] === huPlayer && board[4] === huPlayer && board[8] === null) {
-    board[8] = aiPlayer;
-    aiDisplay(8);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[0] === huPlayer && board[8] === huPlayer && board[4] === null) {
-    board[4] = aiPlayer;
-    aiDisplay(4);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[4] === huPlayer && board[8] === huPlayer && board[0] === null) {
-    board[0] = aiPlayer;
-    aiDisplay(0);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[6] === huPlayer && board[4] === huPlayer && board[2] === null) {
-    board[2] = aiPlayer;
-    aiDisplay(2);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[6] === huPlayer && board[2] === huPlayer && board[4] === null) {
-    board[4] = aiPlayer;
-    aiDisplay(4);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[4] === huPlayer && board[2] === huPlayer && board[6] === null) {
-    board[6] = aiPlayer;
-    aiDisplay(6);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[4] !== aiPlayer && board[4] !== huPlayer) {
-     board[4] = aiPlayer;
-     aiDisplay(4);
-     checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[6] !== aiPlayer && board[6] !== huPlayer) {
-     board[6] = aiPlayer;
-     aiDisplay(6);
-     checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[1] !== aiPlayer && board[1] !== huPlayer) {
-    board[1] = aiPlayer;
-    aiDisplay(1);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[2] !== aiPlayer && board[2] !== huPlayer) {
-    board[2] = aiPlayer;
-    aiDisplay(2);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[3] !== aiPlayer && board[3] !== huPlayer) {
-    board[3] = aiPlayer;
-    aiDisplay(3);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[5] !== aiPlayer && board[5] !== huPlayer) {
-    board[5] = aiPlayer;
-    aiDisplay(5);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[7] !== aiPlayer && board[7] !== huPlayer) {
-    board[7] = aiPlayer;
-    aiDisplay(7);
-    checkForWin(aiPlayer);
-  } else if (currentPlayer === aiPlayer && board[8] !== aiPlayer && board[8] !== huPlayer) {
-    board[8] = aiPlayer;
-    aiDisplay(8);
-    checkForWin(aiPlayer);
-  }
+    } else if (currentPlayer === aiPlayer && board[2] === huPlayer && board[8] === huPlayer && board[5] === null) {
+      board[5] = aiPlayer;
+      aiDisplay(5);
+    } else if (currentPlayer === aiPlayer && board[5] === huPlayer && board[8] === huPlayer && board[2] === null) {
+      board[2] = aiPlayer;
+      aiDisplay(2);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[0] === huPlayer && board[4] === huPlayer && board[8] === null) {
+      board[8] = aiPlayer;
+      aiDisplay(8);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[0] === huPlayer && board[8] === huPlayer && board[4] === null) {
+      board[4] = aiPlayer;
+      aiDisplay(4);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[4] === huPlayer && board[8] === huPlayer && board[0] === null) {
+      board[0] = aiPlayer;
+      aiDisplay(0);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[6] === huPlayer && board[4] === huPlayer && board[2] === null) {
+      board[2] = aiPlayer;
+      aiDisplay(2);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[6] === huPlayer && board[2] === huPlayer && board[4] === null) {
+      board[4] = aiPlayer;
+      aiDisplay(4);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[4] === huPlayer && board[2] === huPlayer && board[6] === null) {
+      board[6] = aiPlayer;
+      aiDisplay(6);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[4] !== aiPlayer && board[4] !== huPlayer) {
+       board[4] = aiPlayer;
+       aiDisplay(4);
+       checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[6] !== aiPlayer && board[6] !== huPlayer) {
+       board[6] = aiPlayer;
+       aiDisplay(6);
+       checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[1] !== aiPlayer && board[1] !== huPlayer) {
+      board[1] = aiPlayer;
+      aiDisplay(1);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[2] !== aiPlayer && board[2] !== huPlayer) {
+      board[2] = aiPlayer;
+      aiDisplay(2);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[3] !== aiPlayer && board[3] !== huPlayer) {
+      board[3] = aiPlayer;
+      aiDisplay(3);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[5] !== aiPlayer && board[5] !== huPlayer) {
+      board[5] = aiPlayer;
+      aiDisplay(5);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[7] !== aiPlayer && board[7] !== huPlayer) {
+      board[7] = aiPlayer;
+      aiDisplay(7);
+      checkForWin(aiPlayer);
+    } else if (currentPlayer === aiPlayer && board[8] !== aiPlayer && board[8] !== huPlayer) {
+      board[8] = aiPlayer;
+      aiDisplay(8);
+      checkForWin(aiPlayer);
+    }
 }
 
 const aiDisplay = function(id) {
